@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int verificaSenha(char *senha){
+int verificaSenha(char senha[]){
     int temMaiuscula = 0, temMinuscula = 0, temNumero = 0, tamanhoSenha = strlen(senha);
 
     if (tamanhoSenha < 8){
