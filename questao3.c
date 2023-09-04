@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main(){
-    char vogais[50], frase[50];
+    char vogais[50] = {}, frase[50];
 
     printf("Escreva sua frase: ");
     scanf("%s", frase);
