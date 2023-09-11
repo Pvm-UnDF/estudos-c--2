@@ -26,7 +26,7 @@ void adicionarItem(char itens[][50], int *numItens) {
 
     char novoItem[50];
     printf("Digite o nome do novo item: ");
-    scanf(" %[^\n]", novoItem);
+    scanf(" %[^\n]s", novoItem);
 
     strcpy(itens[*numItens], novoItem);
     *numItens = *numItens + 1;
