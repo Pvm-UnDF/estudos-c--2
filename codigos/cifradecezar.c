@@ -34,7 +34,7 @@ void adicionarString(unsigned char mensagem[], int adiantamento){
 
         if(tipoLetra == 1){ // Maiuscula
             mensagem[i] += adiantamento;
-            
+
             if(mensagem[i] > 90){
                 mensagem[i] -= 26;
             }else if(mensagem[i] < 65){
@@ -56,7 +56,7 @@ void sistemaCifragem(int cifrar){
     int adiantamento;
 
     printf("Digite a frase: ");
-    scanf(" %[^\n]", frase);
+    scanf(" %[^\n]s", frase);
 
     adiantamento = validarAdiantamento();
     adiantamento *= cifrar;
